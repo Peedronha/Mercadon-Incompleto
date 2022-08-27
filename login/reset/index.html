@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--tag para adaptação mobile-->
+    <!--Nome do site-->
+    <title>Mudar Senha</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="../formulario/javascript/script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <h4>REDEFINIR SENHA</h4>
+
+            <div class="input-container">
+                <input type="text" name="user" id="user" placeholder="Informe o nome de usuário" required>
+                <i data-feather="user"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="hidden" name="psw_hash">
+                <input type="password" name="psw" id="psw" placeholder="Cadastre uma nova senha" required>
+                <i data-feather="unlock"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="hidden" name="new_hash">
+                <input type="password" name="psw2" id="psw2" placeholder="Confirme a senha" required>
+                <i data-feather="lock"></i>
+            </div>
+
+            <button type="button" onclick="recover()" value="Confirmar">Confirmar</button>
+        </form>
+
+        <p class="footer"></p> 
+
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+
+</body>
+</html>

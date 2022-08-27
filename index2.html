@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagens/scratzinho.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 786px)" href="css/mobile.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="login/formulario/javascript/script.js"></script>
+    <title>Mercad.On</title>
+    
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo"><a href="./../index2.html">Mercad.On</a></h1>
+            <ul id="navbar-itens">
+                <li><a href="alimentos/index.html">Alimentos Básicos</a></li>
+                <li><a href="carnes/index.html">Carnes</a></li>
+                <li><a href="bebidas/index.html">Bebidas</a></li>
+                <li><a href="limpeza/index.html">Limpeza</a></li>
+                <li><a href="higiene/index.html">Higiene</a></li>
+                <li><a><button type="button" onclick="logout()">Logout</button></a></li>
+                <li><a href="carrinho/index.html">Suas compras</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div id="home-container">
+            <h2>Chegou o Mercad.On</h2>
+            <p>As melhores ofertas na palma da mão</p>
+            <a href="#ofertas" class="botton">Confira</a>
+        </div>
+    </header>
+
+    <!--Colocar carrossel-->
+    <section id="produto">
+        <div class="titulos">Nossos produtos</div>
+        <div id="product-container">
+            <img src="imagens/scratzinho.jpg" alt="" class="produto">
+            <div id="itens">
+                <div class="item">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, provident. Ipsa voluptas ab sed quod libero.</p>
+                </div>
+
+                <div class="item">                   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, provident. Ipsa voluptas ab sed quod libero.</p>
+                </div>
+
+                <div class="item">                     
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, provident. Ipsa voluptas ab sed quod libero.</p>
+                </div>
+
+                <div class="item">                   
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, provident. Ipsa voluptas ab sed quod libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ofertas">
+        <div class="titulos">Ofertas</div>
+        <div id="ofertas-container">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">
+            <img src="imagens/scratzinho.jpg" alt="" class="ofertas-image">        
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="titulos">Quem somos</div>
+        <div id="features-container">  
+            <div class="feature">   
+                <span class="feature-titulo"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nisi eum odio, aperiam explicabo rem!</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="pessoas">
+        <div class="titulos">O que acham de nós</div>
+        <div id="pessoas-container">
+            <div class="pessoas">
+                <img src="imagens/scrat.jpg" alt="" id="pessoas-image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum provident pariatur hic, voluptas suscipit excepturi velit quae enim voluptate.</p>
+            </div>
+
+            <div class="pessoas">
+                <img src="imagens/scrat.jpg" alt="" id="pessoas-image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum provident pariatur hic, voluptas suscipit excepturi velit quae enim voluptate.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="titulos">Contatos</div>
+        <div id="features-container">  
+            <div class="feature">   
+                <span class="contatos">
+                    <i data-feather="mail"></i>
+                    <span>suporte.mercadon@gmail.com</span> <br> <br>
+                    <i data-feather="instagram"></i>
+                    <span>@mercado.On</span> <br> <br>
+                    <i data-feather="phone"></i> 
+                    <span>+55 41 4002-8922</span> 
+                </span>
+            </div>  
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Mercad.On ® Copyright 2022 - Todos os direitos reservados. </p>
+    </footer>
+
+    <script>
+        feather.replace()
+    </script>
+        
+</body>
+</html>

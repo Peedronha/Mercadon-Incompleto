@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--tag para adaptação mobile-->
+    <!--Nome do site-->
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 786px)" href="mobile.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="formulario\javascript\script.js"></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo"><a href="./../index.html">Mercad.On</a></h1>
+            <ul id="navbar-itens">
+                <li><a href="alimentos/index.html">Alimentos Básicos</a></li>
+                <li><a href="carnes/index.html">Carnes</a></li>
+                <li><a href="bebidas/index.html">Bebidas</a></li>
+                <li><a href="limpeza/index.html">Limpeza</a></li>
+                <li><a href="higiene/index.html">Higiene</a></li>
+                <li><a href="login/index.html">Login</a></li>
+                <li><a href="carrinho/index.html">Suas compras</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        <form id="form">
+            <h3>ENTRAR</h3>
+            <div class="input-container">
+                <input type="text" name="user" placeholder="Usuário" required>
+                <i data-feather="user"></i>
+            </div>
+
+            <div class="input-container">
+                <input type="hidden" id="senha_hash" name="senha_hash">
+                <input type="password" name="" id="psw" placeholder="Senha" required>
+                <i data-feather="lock"></i>
+            </div>
+
+            <div class="options-container">
+                <div class="checkbox-container">
+                    <input type="checkbox" name="remember" id="remenber">
+                    <label for="remember">Lembre-me</label>
+                </div><a href="formulario/reset.html">Redefinir senha</a>
+            </div>
+            <button type="button" onclick="login()">Entrar</button>
+
+            <p>ou entrar com</p>
+
+            <div class="social-media-container">
+                <div class="icon-container">
+                    <a href="https://pt-br.facebook.com/"><i data-feather="facebook"></i></a>
+                </div>
+                <div class="icon-container">
+                    <a href="https://www.google.com/intl/pt/gmail/about/"><i data-feather="mail"></i> </a>
+                </div>
+
+                <div class="icon-container">
+                    <a href="https://twitter.com/"><i data-feather="twitter"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="footer"><a href="formulario/index.html">Não tem um cadastro? Clique aqui </a></p> 
+        </form>
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>
